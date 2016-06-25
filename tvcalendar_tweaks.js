@@ -44,10 +44,6 @@
     var replace = document.querySelector(".replace");
     replace.style.display = 'none';
 
-    $('html, body').animate({
-        scrollTop: $(".today").offset().top - 70
-    }, 500);
-
     $('#month_box .ep p').each(function(){
         var _this = $(this);
         var text = _this.children("a:first-child").text() + " " + $(this).children("a:nth-child(2)").text();
@@ -63,5 +59,10 @@
         pirates[i].style.display = 'inline';
         pirates[i].style.marginRight = '3px';
     }
+
+    $('html, body').animate({
+        scrollTop: $(".today").offset().top - 70
+    }, 500);
+
 
 })();
