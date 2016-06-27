@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         TVCalendar tweaks
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @author       Noximo
 // @match        http://www.pogdesign.co.uk/cat/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/noximo/tvcalendar_tweaks/master/tvcalendar_tweaks.js
 // ==/UserScript==
 
 (function() {
@@ -51,6 +52,7 @@
         var div = $("<div class='pirates'/>");
         _this.append(div);
         div.append("<a target='_blank' href='https://kat.cr/usearch/" + text + "%20category%3Atv/?field=seeders&sorder=desc'>KST</a>");
+        div.append("<a target='_blank' href='https://torrentbytes.net/browse.php?search=" + text + "'>TB</a>");
         //div.append("<a target='_blank' href='https://uloz.to/hledej?q=" + text + "'>Uloz.to</a>");
     });
 
